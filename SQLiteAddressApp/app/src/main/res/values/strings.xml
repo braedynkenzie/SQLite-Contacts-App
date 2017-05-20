@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SQLite Contacts App</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="address">Home Address</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="add_button">+</string>
+    <string name="save_data">Save</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="home_address">Home Address</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="title_activity_new_contact">NewContact</string>
+</resources>

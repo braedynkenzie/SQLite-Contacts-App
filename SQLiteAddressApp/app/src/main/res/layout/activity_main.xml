@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="braedynkenzie.sqliteaddressapp.MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:text="@string/contacts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactsTitleTextView"
+            tools:paddingLeft="@dimen/padding_5dp"
+            android:textSize="24sp"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="@string/add_button"
+            android:id="@+id/button"
+            android:background="#444444"
+            android:textColor="#FFF"
+            android:onClick="showAddContact"
+            tools:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </TableRow>
+
+</TableLayout>

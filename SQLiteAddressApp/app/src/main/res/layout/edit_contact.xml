@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:text="@string/edit_contact"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5dp"
+            android:id="@+id/editContactTextView" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:text="@string/first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstNameTextView"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:id="@+id/firstNameEditText">
+            <requestFocus />
+        </EditText>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:text="@string/last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastNameTextView"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:id="@+id/lastNameEditText">
+            <requestFocus />
+        </EditText>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:text="@string/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTextView"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:id="@+id/emailEditText">
+            <requestFocus />
+        </EditText>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:text="@string/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNumberTextView"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:id="@+id/phoneNumberEditText">
+            <requestFocus />
+        </EditText>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:text="@string/home_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeAddressTextView"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text|textPostalAddress"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:id="@+id/homeAddressEditText">
+            <requestFocus />
+        </EditText>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:text="@string/save_data"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/editContactButton"
+            android:layout_weight="1"
+            android:onClick="editContact"/>
+        <Button
+            android:text="@string/edit_contact"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteContactButton"
+            android:layout_weight="1"
+            android:onClick="removeContact"/>
+
+    </TableRow>
+
+</TableLayout>
